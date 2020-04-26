@@ -2,15 +2,13 @@
 
 class Ingredient{
 
-Ingredient(this._name,this._gram);
+Ingredient(this._name,this.gram);
 
 
 String _name;
-int _gram;
+int gram;
 
 String get name => _name;
-int get gram => _gram;
-
 
 
 
