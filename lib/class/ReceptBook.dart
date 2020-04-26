@@ -15,7 +15,8 @@ void addReceptToList (Receptuur recept){
 Receptuur getCalculatedReceptuur (Receptuur recept,int totalGram ){
 
   //berreken procent
-double procent = recept.getTotalGram() / totalGram;
+double procent =   totalGram/recept.getTotalGram();
+print(procent.toString() +"% total:"+recept.getTotalGram().toString()+" newtotalgram"+ totalGram.toString() );
 
 //for loop throw the ingrediants list
   for(int i = 0; i< recept.ingrediants.length;i++){
